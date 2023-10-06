@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Project.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WashEm</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/test.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <script src="https://kit.fontawesome.com/3c65dc2b50.js" crossorigin="anonymous"></script>
+    <script src="JS/nav.js" defer> </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <nav id="wrap">
+        <div id="logo-contain">
+            <div><a class="refresh" href="Home.aspx">WASH'EM TATTOO</a> </div>
+        </div>
+        <div id="page-wrap" class="showup">
+            <div class="pages" id="home">Home </div>
+            <div class="pages" id="about">About </div>
+            <div class="pages" id="blog">Blog </div>
+            <div class="pages" id="contact">Contact </div>
+            <div class="pages" id="socials">Socials </div>
+            <div class="pages" id="faq">FAQ </div>
+        </div>
+        <div id="icon" class="show one"><i class="fa-solid fa-bars" id="bars"></i></div>
+        <div id="x" class="show"><i class="fa-solid fa-xmark" style="font-size: 1.7rem;" id="xicon"></i></div>
+    </nav>
+
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
